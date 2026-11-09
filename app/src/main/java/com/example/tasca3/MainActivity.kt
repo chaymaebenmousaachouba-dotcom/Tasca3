@@ -10,6 +10,7 @@ const val NOMBRE = "nombre"
 const val EMAIL = "email"
 const val BIO = "bio"
 const val IMAGEN = "imagen"
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
