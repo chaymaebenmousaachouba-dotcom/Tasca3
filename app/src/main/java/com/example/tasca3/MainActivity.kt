@@ -6,6 +6,10 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
+const val NOMBRE = "nombre"
+const val EMAIL = "email"
+const val BIO = "bio"
+const val IMAGEN = "imagen"
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,10 +26,10 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this, ProfileActivity::class.java)
 
-            intent.putExtra("nombre", nombre.text.toString())
-            intent.putExtra("email", email.text.toString())
-            intent.putExtra("bio", bio.text.toString())
-            intent.putExtra("imagen", imagen.text.toString())
+            intent.putExtra(NOMBRE, nombre.text.toString())
+            intent.putExtra(EMAIL, email.text.toString())
+            intent.putExtra(BIO, bio.text.toString())
+            intent.putExtra(IMAGEN, imagen.text.toString())
 
             startActivity(intent)
         }

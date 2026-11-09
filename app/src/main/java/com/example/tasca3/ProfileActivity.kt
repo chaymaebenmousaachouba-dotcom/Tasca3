@@ -19,11 +19,11 @@ class ProfileActivity : AppCompatActivity() {
         val imagen = findViewById<ImageView>(R.id.imgPerfil)
         val boton = findViewById<Button>(R.id.btnVolver)
 
-        nombre.text = intent.getStringExtra("nombre")
-        email.text = intent.getStringExtra("email")
-        bio.text = intent.getStringExtra("bio")
+        nombre.text = intent.getStringExtra(NOMBRE)
+        email.text = intent.getStringExtra(EMAIL)
+        bio.text = intent.getStringExtra(BIO)
 
-        val url = intent.getStringExtra("imagen")
+        val url = intent.getStringExtra(IMAGEN)
 
        // Glide.with(this).load(url).into(imagen)
 
