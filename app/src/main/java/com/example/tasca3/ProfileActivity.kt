@@ -25,7 +25,10 @@ class ProfileActivity : AppCompatActivity() {
 
         val url = intent.getStringExtra("imagen")
 
-        Glide.with(this).load(url).into(imagen)
+       // Glide.with(this).load(url).into(imagen)
+
+        // profe:
+        Glide.with(imagen).load("https://www.pixartprinting.it/blog/wp-content/uploads/2021/06/1_Mona_Lisa_300ppi.jpg").into(imagen)
 
         boton.setOnClickListener {
             finish()
